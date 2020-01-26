@@ -1,5 +1,5 @@
 console.log("all ok")
-punkt2_2()
+punkt2_2_2()
 
 
 function punkt2_1() {
@@ -14,7 +14,7 @@ function punkt2_1() {
 	console.log(c);
 }
 
-function punkt2_2() {
+function punkt2_2_1() {
 	//экранирование
 	console.log("кино \"аватар\" \n \\n - перевод строки");
 	//функции строк
@@ -32,4 +32,20 @@ function punkt2_2() {
 	console.log(s.toLowerCase()) // в нижний регистр
 	console.log(s.toUpperCase()) // в верхний регистр
 	console.log(s.trim()) //обрезает пробельныесимволы в начале и в конце
+}
+
+function punkt2_2_2() {
+	//Math
+	console.log(Math.pow(2, 4))  //возведение 2 в степень 4
+	console.log(Math.pow(2, -3))
+	console.log(Math.sqrt(9))    // корень квадратный
+	console.log(Math.ceil(1.25)) //округление вверх
+	console.log(Math.floor(1.25)) //округление вниз
+	console.log(Math.round(1.25)) //округление по правилам
+	console.log(Math.round(1.75)) //округление по правилам
+	console.log(Math.max(1,2,3,4,246,23,6)) 
+	console.log(Math.min(12,45,1365,427,346,2435)) 
+	console.log(Math.sign(-3))
+	console.log(Math.sign(0))
+	console.log(Math.sign(34))
 }
