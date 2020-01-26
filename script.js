@@ -1,5 +1,5 @@
 console.log("all ok")
-punkt2_2_3()
+punkt2_2_4()
 
 
 function punkt2_1() {
@@ -68,4 +68,24 @@ function punkt2_2_3() {
 	});
 	console.log(c) //добавляет в список лишь те элементы, для которых
 	               // значение функции было истинно
+}
+
+function punkt2_2_4(){
+	//sort
+	let a = [1,4,9,3,7,37,658,36,73,4698,57,63245,643,67,579,78,14567]
+	let b = a.sort()
+	console.log(b)
+	let c = a.sort(key)
+	console.log(c)
+}
+
+function key(fst, snd){
+	if (fst < snd){
+		return -1;
+	}else{
+		if (fst === snd)
+			return 0
+		else
+			return 1
+	}
 }
