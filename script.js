@@ -1,5 +1,5 @@
 console.log("all ok")
-punkt2_2_2()
+punkt2_2_3()
 
 
 function punkt2_1() {
@@ -48,4 +48,24 @@ function punkt2_2_2() {
 	console.log(Math.sign(-3))
 	console.log(Math.sign(0))
 	console.log(Math.sign(34))
+}
+
+function punkt2_2_3() {
+	let array = [1, 2, 3, 4, 5]
+	let b = array.map(function(x){
+		return 2 * x;
+	});
+	console.log(b) //map применяет функцию к каждому элементу массива
+
+	let copy = []; 
+	array.forEach(function(x){
+		copy.unshift(x);
+	});
+	console.log(copy) //похож на map, но не формирует новый массив
+
+	let c = array.filter(function(x){
+		return x % 2 == 1;
+	});
+	console.log(c) //добавляет в список лишь те элементы, для которых
+	               // значение функции было истинно
 }
