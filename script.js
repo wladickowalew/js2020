@@ -1,5 +1,5 @@
 console.log("all ok")
-punkt2_5()
+punkt2_6()
 
 
 function punkt2_1() {
@@ -111,4 +111,26 @@ function punkt2_5(){
 
 function getCaller(){
 	console.log(this);
+}
+
+function punkt2_6(){
+	let num = new Set()
+	num.add(43)
+	console.log(num)
+	num.add(42)
+	console.log(num)
+	num.add(43)
+	console.log(num)
+	console.log(num.has(43))
+	console.log(num.has(41))
+	num.add(4)
+	console.log(num)
+	for (let item of num){
+		console.log(item)
+	}
+	num.delete(43)
+	console.log(num)
+	console.log(num.size)
+	num.clear()
+	console.log(num)
 }
