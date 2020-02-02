@@ -1,5 +1,5 @@
 console.log("all ok")
-punkt2_3()
+punkt2_5()
 
 
 function punkt2_1() {
@@ -101,4 +101,14 @@ function punkt2_3(){
 	console.log(c)
 	c = a > b ? a : b;
 	console.log(c)
+}
+
+function punkt2_5(){
+	getCaller()
+	let alice = {name: "Alice", fn: getCaller}
+	alice.fn()
+}
+
+function getCaller(){
+	console.log(this);
 }
